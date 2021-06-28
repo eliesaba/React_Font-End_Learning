@@ -1,0 +1,20 @@
+[
+    {
+      "id": "a",
+      "title": "ocean at dusk", 
+      "color": "#00c4e2",
+      "rating": 5
+    },
+    {
+      "id": "b",
+      "title": "lawn", 
+      "color": "#26ac56",
+      "rating": 3
+    },
+    {
+      "id": "c",
+      "title": "bright red", 
+      "color": "#ff0000",
+      "rating": 4
+    } 
+  ]
