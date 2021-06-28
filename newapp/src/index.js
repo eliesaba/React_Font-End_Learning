@@ -12,5 +12,5 @@ import { App } from './App';
 ReactDOM.render(
   //<Menu array= {data} title= "Delicious Recipes"/>,document.getElementById('root')
   //<CreateStar/>,document.getElementById('root')
-   <App />, document.getElementById('root')
+  <App />, document.getElementById('root')
 );

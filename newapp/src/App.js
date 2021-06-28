@@ -1,10 +1,11 @@
 import logo from './logo.svg';
-import React, { useState } from 'react';
-import {FaStar} from "react-icons/fa";
+import React, { useState, useRef } from 'react';
+//import {FaStar} from "react-icons/fa";
 import './App.css';
-import { Component } from 'react';
-import ColorData from './color-data.json'
-import {ColorList} from './ColorList.js'
+//import { Component } from 'react';
+//import ColorData from './color-data.json'
+//import {ColorList} from './ColorList.js'
+
 
 // export const data = [
 //   { 
@@ -96,4 +97,29 @@ import {ColorList} from './ColorList.js'
 //                                 setColors(newColors);
 //                                       } }/>
 // }
+
+export function App() {
+     const [txtTitle, settxtTile] = useState("");
+     const  [hexColor, sethexColor] = useState("");
+
+    const submit = e => {
+        e.preventDefault();
+        console.log({txtTitle});
+    }
+
+    return(
+        <section>
+            <form onSubmit = {submit}>
+                <input value = {txtTitle} type = "text" onChange={e=>settxtTile(e.target.value)} required/>
+                <input type = "color" required/>
+                <button type = "submit"/>
+            </form>
+        </section>
+    );
+    
+}
+
+
+
+
 
